@@ -1,0 +1,547 @@
+[0m16:04:05.819346 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B389950990>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B38E265890>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B38E2978D0>]}
+
+
+============================== 16:04:05.826617 | 9f312298-1429-4f1d-975a-a6360479e0a3 ==============================
+[0m16:04:05.826617 [info ] [MainThread]: Running with dbt=1.11.11
+[0m16:04:05.828618 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\gabii\\.dbt', 'use_colors': 'True', 'invocation_command': 'dbt init foreign_trade_brazil', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m16:04:05.879922 [info ] [MainThread]: Creating dbt configuration folder at C:\Users\gabii\.dbt
+[0m16:04:05.884246 [debug] [MainThread]: Starter project path: C:\Users\gabii\anaconda3\envs\foreign-trade-brazil\Lib\site-packages\dbt\include\starter_project
+[0m16:04:05.959015 [info ] [MainThread]: 
+Your new dbt project "foreign_trade_brazil" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m16:04:05.961025 [info ] [MainThread]: Setting up your profile.
+[0m16:14:48.699447 [info ] [MainThread]: Profile foreign_trade_brazil written to C:\Users\gabii\.dbt\profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m16:14:48.771328 [debug] [MainThread]: Command `dbt init` succeeded at 16:14:48.768307 after 643.12 seconds
+[0m16:14:48.781857 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B38CFE7C50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B385516090>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B385515C10>]}
+[0m16:14:48.788871 [debug] [MainThread]: Flushing usage events
+[0m16:14:49.431023 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:15:11.630575 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028E941E5050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028E93057B10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028E942A5D50>]}
+
+
+============================== 16:15:11.640112 | e31af0cb-5e2b-404d-8330-d8609d9b9739 ==============================
+[0m16:15:11.640112 [info ] [MainThread]: Running with dbt=1.11.11
+[0m16:15:11.642115 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\gabii\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'invocation_command': 'dbt debug', 'use_colors': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m16:15:11.696943 [info ] [MainThread]: dbt version: 1.11.11
+[0m16:15:11.697943 [info ] [MainThread]: python version: 3.11.15
+[0m16:15:11.699380 [info ] [MainThread]: python path: C:\Users\gabii\anaconda3\envs\foreign-trade-brazil\python.exe
+[0m16:15:11.701728 [info ] [MainThread]: os info: Windows-10-10.0.26200-SP0
+[0m16:15:14.134490 [info ] [MainThread]: Using profiles dir at C:\Users\gabii\.dbt
+[0m16:15:14.138769 [info ] [MainThread]: Using profiles.yml file at C:\Users\gabii\.dbt\profiles.yml
+[0m16:15:14.139782 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\gabii\OneDrive\Área de Trabalho\Porfolio\Foreign_Trade_Brazil\dbt_project.yml
+[0m16:15:14.144782 [info ] [MainThread]: adapter type: bigquery
+[0m16:15:14.147170 [info ] [MainThread]: adapter version: 1.11.3
+[0m16:15:14.149402 [info ] [MainThread]: Configuration:
+[0m16:15:14.151876 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m16:15:14.156884 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m16:15:14.160889 [info ] [MainThread]: Required dependencies:
+[0m16:15:14.163887 [debug] [MainThread]: Executing "git --help"
+[0m16:15:14.224296 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify tags\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m16:15:14.225299 [debug] [MainThread]: STDERR: "b''"
+[0m16:15:14.227299 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m16:15:14.228320 [info ] [MainThread]: Connection:
+[0m16:15:14.229296 [info ] [MainThread]:   method: oauth
+[0m16:15:14.231458 [info ] [MainThread]:   database: foreign-trade-brazil
+[0m16:15:14.233570 [info ] [MainThread]:   execution_project: foreign-trade-brazil
+[0m16:15:14.236716 [info ] [MainThread]:   schema: analytics
+[0m16:15:14.238731 [info ] [MainThread]:   location: EU
+[0m16:15:14.240903 [info ] [MainThread]:   priority: interactive
+[0m16:15:14.242897 [info ] [MainThread]:   maximum_bytes_billed: None
+[0m16:15:14.244898 [info ] [MainThread]:   impersonate_service_account: None
+[0m16:15:14.248925 [info ] [MainThread]:   job_retry_deadline_seconds: None
+[0m16:15:14.252109 [info ] [MainThread]:   job_retries: 1
+[0m16:15:14.253773 [info ] [MainThread]:   job_creation_timeout_seconds: None
+[0m16:15:14.255787 [info ] [MainThread]:   job_execution_timeout_seconds: 300
+[0m16:15:14.257789 [info ] [MainThread]:   timeout_seconds: 300
+[0m16:15:14.260030 [info ] [MainThread]:   client_id: None
+[0m16:15:14.263194 [info ] [MainThread]:   token_uri: None
+[0m16:15:14.265741 [info ] [MainThread]:   compute_region: None
+[0m16:15:14.266737 [info ] [MainThread]:   dataproc_cluster_name: None
+[0m16:15:14.269744 [info ] [MainThread]:   gcs_bucket: None
+[0m16:15:14.272998 [info ] [MainThread]:   dataproc_batch: None
+[0m16:15:14.275244 [info ] [MainThread]: Registered adapter: bigquery=1.11.3
+[0m16:15:15.012884 [debug] [MainThread]: Acquiring new bigquery connection 'debug'
+[0m16:15:15.013884 [debug] [MainThread]: On debug: select 1 as id
+[0m16:15:15.014888 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m16:15:17.907069 [debug] [MainThread]: BigQuery adapter: Got an error when attempting to create a bigquery " "client: 'Runtime Error
+  Failed to authenticate with supplied credentials
+  error:
+  Your default credentials were not found. To set up Application Default Credentials, see https://cloud.google.com/docs/authentication/external/set-up-adc for more information.'
+[0m16:15:17.908067 [debug] [MainThread]: BigQuery adapter: Unhandled error while running:
+select 1 as id
+[0m16:15:17.910066 [debug] [MainThread]: BigQuery adapter: Database Error
+  Runtime Error
+    Failed to authenticate with supplied credentials
+    error:
+    Your default credentials were not found. To set up Application Default Credentials, see https://cloud.google.com/docs/authentication/external/set-up-adc for more information.
+[0m16:15:17.911067 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m16:15:17.912067 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m16:15:17.913468 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <C:\Users\gabii\OneDrive\Área de Trabalho\Porfolio\Foreign_Trade_Brazil\dbt_project.yml> not found
+
+[0m16:15:17.915485 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >'NoneType' object has no attribute 'close'
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m16:15:17.917483 [debug] [MainThread]: Command `dbt debug` failed at 16:15:17.916481 after 6.46 seconds
+[0m16:15:17.918759 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028E94307CD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028E8B645F50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028E94296C50>]}
+[0m16:15:17.919773 [debug] [MainThread]: Flushing usage events
+[0m16:15:18.372200 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:23:31.163692 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F8A04F09D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F8A0520210>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F8A0522B90>]}
+
+
+============================== 16:23:31.170695 | 75569d04-d5ae-4f01-a63d-28dc49e1d91b ==============================
+[0m16:23:31.170695 [info ] [MainThread]: Running with dbt=1.11.11
+[0m16:23:31.172888 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'True', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\gabii\\.dbt', 'indirect_selection': 'eager', 'invocation_command': 'dbt debug --debug', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\gabii\\OneDrive\\Área de Trabalho\\Porfolio\\Foreign_Trade_Brazil\\logs'}
+[0m16:23:31.206436 [info ] [MainThread]: dbt version: 1.11.11
+[0m16:23:31.207439 [info ] [MainThread]: python version: 3.11.15
+[0m16:23:31.208434 [info ] [MainThread]: python path: C:\Users\gabii\anaconda3\envs\foreign-trade-brazil\python.exe
+[0m16:23:31.209440 [info ] [MainThread]: os info: Windows-10-10.0.26200-SP0
+[0m16:23:33.664586 [info ] [MainThread]: Using profiles dir at C:\Users\gabii\.dbt
+[0m16:23:33.666582 [info ] [MainThread]: Using profiles.yml file at C:\Users\gabii\.dbt\profiles.yml
+[0m16:23:33.667582 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\gabii\OneDrive\Área de Trabalho\Porfolio\Foreign_Trade_Brazil\dbt_project.yml
+[0m16:23:33.669645 [info ] [MainThread]: adapter type: bigquery
+[0m16:23:33.671643 [info ] [MainThread]: adapter version: 1.11.3
+[0m16:23:33.850588 [info ] [MainThread]: Configuration:
+[0m16:23:33.852587 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m16:23:33.853586 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m16:23:33.854588 [info ] [MainThread]: Required dependencies:
+[0m16:23:33.856590 [debug] [MainThread]: Executing "git --help"
+[0m16:23:33.898234 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify tags\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m16:23:33.899236 [debug] [MainThread]: STDERR: "b''"
+[0m16:23:33.901239 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m16:23:33.902236 [info ] [MainThread]: Connection:
+[0m16:23:33.902236 [info ] [MainThread]:   method: oauth
+[0m16:23:33.903475 [info ] [MainThread]:   database: foreign-trade-brazil
+[0m16:23:33.904523 [info ] [MainThread]:   execution_project: foreign-trade-brazil
+[0m16:23:33.905533 [info ] [MainThread]:   schema: analytics
+[0m16:23:33.906536 [info ] [MainThread]:   location: EU
+[0m16:23:33.907534 [info ] [MainThread]:   priority: interactive
+[0m16:23:33.908533 [info ] [MainThread]:   maximum_bytes_billed: None
+[0m16:23:33.909535 [info ] [MainThread]:   impersonate_service_account: None
+[0m16:23:33.911532 [info ] [MainThread]:   job_retry_deadline_seconds: None
+[0m16:23:33.912532 [info ] [MainThread]:   job_retries: 1
+[0m16:23:33.913561 [info ] [MainThread]:   job_creation_timeout_seconds: None
+[0m16:23:33.913561 [info ] [MainThread]:   job_execution_timeout_seconds: 300
+[0m16:23:33.914942 [info ] [MainThread]:   timeout_seconds: 300
+[0m16:23:33.916071 [info ] [MainThread]:   client_id: None
+[0m16:23:33.917188 [info ] [MainThread]:   token_uri: None
+[0m16:23:33.917844 [info ] [MainThread]:   compute_region: None
+[0m16:23:33.918861 [info ] [MainThread]:   dataproc_cluster_name: None
+[0m16:23:33.919853 [info ] [MainThread]:   gcs_bucket: None
+[0m16:23:33.920853 [info ] [MainThread]:   dataproc_batch: None
+[0m16:23:33.922854 [info ] [MainThread]: Registered adapter: bigquery=1.11.3
+[0m16:23:34.531039 [debug] [MainThread]: Acquiring new bigquery connection 'debug'
+[0m16:23:34.532037 [debug] [MainThread]: On debug: select 1 as id
+[0m16:23:34.534044 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m16:23:37.285284 [debug] [MainThread]: BigQuery adapter: Got an error when attempting to create a bigquery " "client: 'Runtime Error
+  Failed to authenticate with supplied credentials
+  error:
+  Your default credentials were not found. To set up Application Default Credentials, see https://cloud.google.com/docs/authentication/external/set-up-adc for more information.'
+[0m16:23:37.288306 [debug] [MainThread]: BigQuery adapter: Unhandled error while running:
+select 1 as id
+[0m16:23:37.291291 [debug] [MainThread]: BigQuery adapter: Database Error
+  Runtime Error
+    Failed to authenticate with supplied credentials
+    error:
+    Your default credentials were not found. To set up Application Default Credentials, see https://cloud.google.com/docs/authentication/external/set-up-adc for more information.
+[0m16:23:37.306002 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m16:23:37.308019 [info ] [MainThread]: [31m1 check failed:[0m
+[0m16:23:37.311019 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >'NoneType' object has no attribute 'close'
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m16:23:37.318580 [debug] [MainThread]: Command `dbt debug` failed at 16:23:37.317588 after 6.40 seconds
+[0m16:23:37.320583 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F8A0570590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F89F2A7790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F8A04E6F90>]}
+[0m16:23:37.322581 [debug] [MainThread]: Flushing usage events
+[0m16:23:37.821737 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:38:16.564135 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018EAA280310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018EAA2DBE50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018EAA282A10>]}
+
+
+============================== 16:38:16.574489 | ac32544b-c532-4a8b-afdf-89c4c18e1569 ==============================
+[0m16:38:16.574489 [info ] [MainThread]: Running with dbt=1.11.11
+[0m16:38:16.576486 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\gabii\\.dbt', 'use_colors': 'True', 'indirect_selection': 'eager', 'invocation_command': 'dbt debug', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\gabii\\OneDrive\\Área de Trabalho\\Porfolio\\Foreign_Trade_Brazil\\logs'}
+[0m16:38:16.652350 [info ] [MainThread]: dbt version: 1.11.11
+[0m16:38:16.654349 [info ] [MainThread]: python version: 3.11.15
+[0m16:38:16.656457 [info ] [MainThread]: python path: C:\Users\gabii\anaconda3\envs\foreign-trade-brazil\python.exe
+[0m16:38:16.660476 [info ] [MainThread]: os info: Windows-10-10.0.26200-SP0
+[0m16:38:19.965663 [info ] [MainThread]: Using profiles dir at C:\Users\gabii\.dbt
+[0m16:38:19.967664 [info ] [MainThread]: Using profiles.yml file at C:\Users\gabii\.dbt\profiles.yml
+[0m16:38:19.969664 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\gabii\OneDrive\Área de Trabalho\Porfolio\Foreign_Trade_Brazil\dbt_project.yml
+[0m16:38:19.972049 [info ] [MainThread]: adapter type: bigquery
+[0m16:38:19.974214 [info ] [MainThread]: adapter version: 1.11.3
+[0m16:38:20.335978 [info ] [MainThread]: Configuration:
+[0m16:38:20.341970 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m16:38:20.367490 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m16:38:20.380593 [info ] [MainThread]: Required dependencies:
+[0m16:38:20.383959 [debug] [MainThread]: Executing "git --help"
+[0m16:38:20.516144 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify tags\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m16:38:20.518148 [debug] [MainThread]: STDERR: "b''"
+[0m16:38:20.519148 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m16:38:20.524144 [info ] [MainThread]: Connection:
+[0m16:38:20.530207 [info ] [MainThread]:   method: service-account
+[0m16:38:20.538652 [info ] [MainThread]:   database: foreign-trade-brazil
+[0m16:38:20.549087 [info ] [MainThread]:   execution_project: foreign-trade-brazil
+[0m16:38:20.555089 [info ] [MainThread]:   schema: analytics
+[0m16:38:20.557153 [info ] [MainThread]:   location: EU
+[0m16:38:20.568402 [info ] [MainThread]:   priority: interactive
+[0m16:38:20.581143 [info ] [MainThread]:   maximum_bytes_billed: None
+[0m16:38:20.589245 [info ] [MainThread]:   impersonate_service_account: None
+[0m16:38:20.594776 [info ] [MainThread]:   job_retry_deadline_seconds: None
+[0m16:38:20.600249 [info ] [MainThread]:   job_retries: 1
+[0m16:38:20.603246 [info ] [MainThread]:   job_creation_timeout_seconds: None
+[0m16:38:20.605247 [info ] [MainThread]:   job_execution_timeout_seconds: 300
+[0m16:38:20.606247 [info ] [MainThread]:   timeout_seconds: 300
+[0m16:38:20.614728 [info ] [MainThread]:   client_id: None
+[0m16:38:20.621979 [info ] [MainThread]:   token_uri: None
+[0m16:38:20.624425 [info ] [MainThread]:   compute_region: None
+[0m16:38:20.630787 [info ] [MainThread]:   dataproc_cluster_name: None
+[0m16:38:20.634253 [info ] [MainThread]:   gcs_bucket: None
+[0m16:38:20.639269 [info ] [MainThread]:   dataproc_batch: None
+[0m16:38:20.646345 [info ] [MainThread]: Registered adapter: bigquery=1.11.3
+[0m16:38:21.796254 [debug] [MainThread]: Acquiring new bigquery connection 'debug'
+[0m16:38:21.797255 [debug] [MainThread]: On debug: select 1 as id
+[0m16:38:21.798253 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m16:38:21.799275 [debug] [MainThread]: BigQuery adapter: Got an error when attempting to create a bigquery " "client: '[Errno 2] No such file or directory: 'C:/Users/gabii/.gcp/dbt-bigquery.json''
+[0m16:38:21.799275 [debug] [MainThread]: BigQuery adapter: Unhandled error while running:
+select 1 as id
+[0m16:38:21.801705 [debug] [MainThread]: BigQuery adapter: Database Error
+  [Errno 2] No such file or directory: 'C:/Users/gabii/.gcp/dbt-bigquery.json'
+[0m16:38:21.802706 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m16:38:21.803217 [info ] [MainThread]: [31m1 check failed:[0m
+[0m16:38:21.804268 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >'NoneType' object has no attribute 'close'
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m16:38:21.807123 [debug] [MainThread]: Command `dbt debug` failed at 16:38:21.807123 after 5.45 seconds
+[0m16:38:21.808132 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018EAA306E90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018EAA2E2B50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018EAA277950>]}
+[0m16:38:21.809329 [debug] [MainThread]: Flushing usage events
+[0m16:38:22.371137 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:39:25.306263 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000207A3676E50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000207A3594210>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000207A3596150>]}
+
+
+============================== 16:39:25.311280 | 97cd514a-4565-4058-ba11-38572b2ce8db ==============================
+[0m16:39:25.311280 [info ] [MainThread]: Running with dbt=1.11.11
+[0m16:39:25.313267 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\gabii\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'invocation_command': 'dbt debug', 'indirect_selection': 'eager', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\gabii\\OneDrive\\Área de Trabalho\\Porfolio\\Foreign_Trade_Brazil\\logs'}
+[0m16:39:25.352436 [info ] [MainThread]: dbt version: 1.11.11
+[0m16:39:25.353431 [info ] [MainThread]: python version: 3.11.15
+[0m16:39:25.355222 [info ] [MainThread]: python path: C:\Users\gabii\anaconda3\envs\foreign-trade-brazil\python.exe
+[0m16:39:25.356656 [info ] [MainThread]: os info: Windows-10-10.0.26200-SP0
+[0m16:39:26.830435 [info ] [MainThread]: Using profiles dir at C:\Users\gabii\.dbt
+[0m16:39:26.831479 [info ] [MainThread]: Using profiles.yml file at C:\Users\gabii\.dbt\profiles.yml
+[0m16:39:26.833489 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\gabii\OneDrive\Área de Trabalho\Porfolio\Foreign_Trade_Brazil\dbt_project.yml
+[0m16:39:26.834490 [info ] [MainThread]: adapter type: bigquery
+[0m16:39:26.836601 [info ] [MainThread]: adapter version: 1.11.3
+[0m16:39:27.097420 [info ] [MainThread]: Configuration:
+[0m16:39:27.100420 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m16:39:27.102422 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m16:39:27.107868 [info ] [MainThread]: Required dependencies:
+[0m16:39:27.117867 [debug] [MainThread]: Executing "git --help"
+[0m16:39:27.180967 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify tags\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m16:39:27.182937 [debug] [MainThread]: STDERR: "b''"
+[0m16:39:27.183938 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m16:39:27.184645 [info ] [MainThread]: Connection:
+[0m16:39:27.186026 [info ] [MainThread]:   method: service-account
+[0m16:39:27.188035 [info ] [MainThread]:   database: foreign-trade-brazil
+[0m16:39:27.189035 [info ] [MainThread]:   execution_project: foreign-trade-brazil
+[0m16:39:27.190393 [info ] [MainThread]:   schema: analytics
+[0m16:39:27.193404 [info ] [MainThread]:   location: EU
+[0m16:39:27.194407 [info ] [MainThread]:   priority: interactive
+[0m16:39:27.196747 [info ] [MainThread]:   maximum_bytes_billed: None
+[0m16:39:27.198747 [info ] [MainThread]:   impersonate_service_account: None
+[0m16:39:27.200747 [info ] [MainThread]:   job_retry_deadline_seconds: None
+[0m16:39:27.202744 [info ] [MainThread]:   job_retries: 1
+[0m16:39:27.203747 [info ] [MainThread]:   job_creation_timeout_seconds: None
+[0m16:39:27.208745 [info ] [MainThread]:   job_execution_timeout_seconds: 300
+[0m16:39:27.212291 [info ] [MainThread]:   timeout_seconds: 300
+[0m16:39:27.215308 [info ] [MainThread]:   client_id: None
+[0m16:39:27.217304 [info ] [MainThread]:   token_uri: None
+[0m16:39:27.219525 [info ] [MainThread]:   compute_region: None
+[0m16:39:27.220520 [info ] [MainThread]:   dataproc_cluster_name: None
+[0m16:39:27.223221 [info ] [MainThread]:   gcs_bucket: None
+[0m16:39:27.225246 [info ] [MainThread]:   dataproc_batch: None
+[0m16:39:27.228241 [info ] [MainThread]: Registered adapter: bigquery=1.11.3
+[0m16:39:27.796231 [debug] [MainThread]: Acquiring new bigquery connection 'debug'
+[0m16:39:27.797254 [debug] [MainThread]: On debug: select 1 as id
+[0m16:39:27.798233 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m16:39:27.799231 [debug] [MainThread]: BigQuery adapter: Got an error when attempting to create a bigquery " "client: '[Errno 2] No such file or directory: 'C:/Users/gabii/.gcp/foreign-trade-brazil-f4c46f4df3e8.json''
+[0m16:39:27.800231 [debug] [MainThread]: BigQuery adapter: Unhandled error while running:
+select 1 as id
+[0m16:39:27.800231 [debug] [MainThread]: BigQuery adapter: Database Error
+  [Errno 2] No such file or directory: 'C:/Users/gabii/.gcp/foreign-trade-brazil-f4c46f4df3e8.json'
+[0m16:39:27.801255 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m16:39:27.802283 [info ] [MainThread]: [31m1 check failed:[0m
+[0m16:39:27.803483 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >'NoneType' object has no attribute 'close'
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m16:39:27.805627 [debug] [MainThread]: Command `dbt debug` failed at 16:39:27.805627 after 2.67 seconds
+[0m16:39:27.806640 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002079ABEF310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000207A36F7410>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002079AA15F50>]}
+[0m16:39:27.807644 [debug] [MainThread]: Flushing usage events
+[0m16:39:28.326132 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:40:37.385715 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B1FC650CD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B1FC653A50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B1FC652210>]}
+
+
+============================== 16:40:37.392188 | 37bea6c2-e59f-494a-9e8f-aa870ae59ede ==============================
+[0m16:40:37.392188 [info ] [MainThread]: Running with dbt=1.11.11
+[0m16:40:37.394097 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\gabii\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'indirect_selection': 'eager', 'invocation_command': 'dbt debug', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\gabii\\OneDrive\\Área de Trabalho\\Porfolio\\Foreign_Trade_Brazil\\logs'}
+[0m16:40:37.430314 [info ] [MainThread]: dbt version: 1.11.11
+[0m16:40:37.432312 [info ] [MainThread]: python version: 3.11.15
+[0m16:40:37.437313 [info ] [MainThread]: python path: C:\Users\gabii\anaconda3\envs\foreign-trade-brazil\python.exe
+[0m16:40:37.438770 [info ] [MainThread]: os info: Windows-10-10.0.26200-SP0
+[0m16:40:37.440768 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Syntax error near line 12
+  ------------------------------
+  9  |       priority: interactive
+  10 |       project: foreign-trade-brazil
+  11 |       threads: 4
+  12 |       keyfile: "C:\Users\gabii\OneDrive\Área de Trabalho\.gcp\foreign-trade-brazil-f4c46f4df3e8.json"
+  13 |       type: bigquery
+  14 |   target: dev
+  
+  Raw Error:
+  ------------------------------
+  while parsing a quoted scalar
+    in "<unicode string>", line 12, column 16
+  did not find expected hexdecimal number
+    in "<unicode string>", line 12, column 21
+[0m16:40:37.442769 [debug] [MainThread]: Command `dbt debug` failed at 16:40:37.442769 after 0.13 seconds
+[0m16:40:37.447763 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B1FB407C50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B1FC595450>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B1FC646D90>]}
+[0m16:40:37.451769 [debug] [MainThread]: Flushing usage events
+[0m16:40:37.950307 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:41:45.500372 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EA26263650>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EA26261F90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EA26260650>]}
+
+
+============================== 16:41:45.505372 | 037f76e6-7361-4106-8301-8eab9c01c5b3 ==============================
+[0m16:41:45.505372 [info ] [MainThread]: Running with dbt=1.11.11
+[0m16:41:45.507375 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\gabii\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'use_colors': 'True', 'invocation_command': 'dbt debug', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\gabii\\OneDrive\\Área de Trabalho\\Porfolio\\Foreign_Trade_Brazil\\logs'}
+[0m16:41:45.548964 [info ] [MainThread]: dbt version: 1.11.11
+[0m16:41:45.549963 [info ] [MainThread]: python version: 3.11.15
+[0m16:41:45.550965 [info ] [MainThread]: python path: C:\Users\gabii\anaconda3\envs\foreign-trade-brazil\python.exe
+[0m16:41:45.552963 [info ] [MainThread]: os info: Windows-10-10.0.26200-SP0
+[0m16:41:47.180941 [info ] [MainThread]: Using profiles dir at C:\Users\gabii\.dbt
+[0m16:41:47.182944 [info ] [MainThread]: Using profiles.yml file at C:\Users\gabii\.dbt\profiles.yml
+[0m16:41:47.183942 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\gabii\OneDrive\Área de Trabalho\Porfolio\Foreign_Trade_Brazil\dbt_project.yml
+[0m16:41:47.186171 [info ] [MainThread]: adapter type: bigquery
+[0m16:41:47.187172 [info ] [MainThread]: adapter version: 1.11.3
+[0m16:41:47.335249 [info ] [MainThread]: Configuration:
+[0m16:41:47.337325 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m16:41:47.339335 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m16:41:47.340335 [info ] [MainThread]: Required dependencies:
+[0m16:41:47.341336 [debug] [MainThread]: Executing "git --help"
+[0m16:41:47.375677 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify tags\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m16:41:47.377685 [debug] [MainThread]: STDERR: "b''"
+[0m16:41:47.378681 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m16:41:47.379677 [info ] [MainThread]: Connection:
+[0m16:41:47.380678 [info ] [MainThread]:   method: service-account
+[0m16:41:47.381685 [info ] [MainThread]:   database: foreign-trade-brazil
+[0m16:41:47.382676 [info ] [MainThread]:   execution_project: foreign-trade-brazil
+[0m16:41:47.384682 [info ] [MainThread]:   schema: analytics
+[0m16:41:47.385685 [info ] [MainThread]:   location: EU
+[0m16:41:47.388060 [info ] [MainThread]:   priority: interactive
+[0m16:41:47.390452 [info ] [MainThread]:   maximum_bytes_billed: None
+[0m16:41:47.391461 [info ] [MainThread]:   impersonate_service_account: None
+[0m16:41:47.393616 [info ] [MainThread]:   job_retry_deadline_seconds: None
+[0m16:41:47.394612 [info ] [MainThread]:   job_retries: 1
+[0m16:41:47.396614 [info ] [MainThread]:   job_creation_timeout_seconds: None
+[0m16:41:47.398777 [info ] [MainThread]:   job_execution_timeout_seconds: 300
+[0m16:41:47.401844 [info ] [MainThread]:   timeout_seconds: 300
+[0m16:41:47.403787 [info ] [MainThread]:   client_id: None
+[0m16:41:47.407788 [info ] [MainThread]:   token_uri: None
+[0m16:41:47.409787 [info ] [MainThread]:   compute_region: None
+[0m16:41:47.410787 [info ] [MainThread]:   dataproc_cluster_name: None
+[0m16:41:47.412792 [info ] [MainThread]:   gcs_bucket: None
+[0m16:41:47.416794 [info ] [MainThread]:   dataproc_batch: None
+[0m16:41:47.418790 [info ] [MainThread]: Registered adapter: bigquery=1.11.3
+[0m16:41:47.944499 [debug] [MainThread]: Acquiring new bigquery connection 'debug'
+[0m16:41:47.945502 [debug] [MainThread]: On debug: select 1 as id
+[0m16:41:47.946500 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m16:41:51.535498 [debug] [MainThread]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=foreign-trade-brazil&j=bq:EU:56caeec0-759c-4142-8caf-e2118a375efe&page=queryresults
+[0m16:41:51.734775 [debug] [MainThread]: SQL status: OK in 0.195 seconds
+[0m16:41:52.863387 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m16:41:52.867384 [info ] [MainThread]: [32mAll checks passed![0m
+[0m16:41:52.871644 [debug] [MainThread]: Command `dbt debug` succeeded at 16:41:52.870635 after 7.50 seconds
+[0m16:41:52.873170 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m16:41:52.874184 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EA262E4490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EA250176D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EA261B4B10>]}
+[0m16:41:52.877187 [debug] [MainThread]: Flushing usage events
+[0m16:41:53.370151 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:43:28.206449 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021F050A6AD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021F05129E50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021F05128850>]}
+
+
+============================== 16:43:28.212771 | 92e6c9db-a523-4820-bc49-44693d73e019 ==============================
+[0m16:43:28.212771 [info ] [MainThread]: Running with dbt=1.11.11
+[0m16:43:28.214748 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'empty': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\gabii\\.dbt', 'use_colors': 'True', 'indirect_selection': 'eager', 'invocation_command': 'dbt run', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\gabii\\OneDrive\\Área de Trabalho\\Porfolio\\Foreign_Trade_Brazil\\logs'}
+[0m16:43:30.144555 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '92e6c9db-a523-4820-bc49-44693d73e019', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021F0E5960D0>]}
+[0m16:43:30.223557 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '92e6c9db-a523-4820-bc49-44693d73e019', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021F0085E710>]}
+[0m16:43:30.224559 [info ] [MainThread]: Registered adapter: bigquery=1.11.3
+[0m16:43:30.779712 [debug] [MainThread]: checksum: 30a8cc8fdcbf66701b0944d4ccce3fa46dd04b61e5df68b9f16d57b2e0e3f0be, vars: {}, profile: , target: , version: 1.11.11
+[0m16:43:30.783002 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m16:43:30.785014 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '92e6c9db-a523-4820-bc49-44693d73e019', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021F0E8B2A10>]}
+[0m16:43:33.624140 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '92e6c9db-a523-4820-bc49-44693d73e019', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021F0EC54450>]}
+[0m16:43:33.750131 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\gabii\OneDrive\Área de Trabalho\Porfolio\Foreign_Trade_Brazil\target\manifest.json
+[0m16:43:33.755782 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\gabii\OneDrive\Área de Trabalho\Porfolio\Foreign_Trade_Brazil\target\semantic_manifest.json
+[0m16:43:33.782636 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '92e6c9db-a523-4820-bc49-44693d73e019', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021F0FE38610>]}
+[0m16:43:33.784636 [info ] [MainThread]: Found 2 models, 4 data tests, 553 macros
+[0m16:43:33.785638 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '92e6c9db-a523-4820-bc49-44693d73e019', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021F0E61FCD0>]}
+[0m16:43:33.789636 [info ] [MainThread]: 
+[0m16:43:33.790640 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m16:43:33.793065 [info ] [MainThread]: 
+[0m16:43:33.795078 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m16:43:33.809384 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_foreign-trade-brazil'
+[0m16:43:33.811872 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:43:34.432953 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_foreign-trade-brazil, now create_foreign-trade-brazil_analytics)
+[0m16:43:34.434961 [debug] [ThreadPool]: Creating schema "database: "foreign-trade-brazil"
+schema: "analytics"
+"
+[0m16:43:34.458635 [debug] [ThreadPool]: On create_foreign-trade-brazil_analytics: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "foreign_trade_brazil", "target_name": "dev", "connection_name": "create_foreign-trade-brazil_analytics"} */
+create schema if not exists `foreign-trade-brazil`.`analytics`
+  
+[0m16:43:34.460635 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m16:43:35.185380 [debug] [ThreadPool]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=foreign-trade-brazil&j=bq:EU:81522fa6-7d84-4562-b10d-696323278acb&page=queryresults
+[0m16:43:36.925897 [debug] [ThreadPool]: SQL status: OK in 1.740 seconds
+[0m16:43:37.267802 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_foreign-trade-brazil_analytics'
+[0m16:43:37.268802 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:43:37.754866 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '92e6c9db-a523-4820-bc49-44693d73e019', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021F7FECB950>]}
+[0m16:43:37.755873 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m16:43:37.824944 [debug] [Thread-4 (]: Began running node model.foreign_trade_brazil.my_first_dbt_model
+[0m16:43:37.826943 [info ] [Thread-4 (]: 1 of 2 START sql table model analytics.my_first_dbt_model ...................... [RUN]
+[0m16:43:37.827947 [debug] [Thread-4 (]: Acquiring new bigquery connection 'model.foreign_trade_brazil.my_first_dbt_model'
+[0m16:43:37.829942 [debug] [Thread-4 (]: Began compiling node model.foreign_trade_brazil.my_first_dbt_model
+[0m16:43:37.847374 [debug] [Thread-4 (]: Writing injected SQL for node "model.foreign_trade_brazil.my_first_dbt_model"
+[0m16:43:37.853641 [debug] [Thread-4 (]: Began executing node model.foreign_trade_brazil.my_first_dbt_model
+[0m16:43:37.914325 [debug] [Thread-4 (]: Writing runtime sql for node "model.foreign_trade_brazil.my_first_dbt_model"
+[0m16:43:37.918866 [debug] [Thread-4 (]: On model.foreign_trade_brazil.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "foreign_trade_brazil", "target_name": "dev", "node_id": "model.foreign_trade_brazil.my_first_dbt_model"} */
+
+  
+    
+
+    create or replace table `foreign-trade-brazil`.`analytics`.`my_first_dbt_model`
+      
+    
+    
+
+    
+    OPTIONS()
+    as (
+      /*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below
+*/
+
+
+
+with source_data as (
+
+    select 1 as id
+    union all
+    select null as id
+
+)
+
+select *
+from source_data
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+    );
+  
+[0m16:43:37.921608 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m16:43:38.781360 [debug] [Thread-4 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=foreign-trade-brazil&j=bq:EU:b4b05d74-0ee1-4e10-8044-ae90f4988f15&page=queryresults
+[0m16:43:40.298275 [debug] [Thread-4 (]: SQL status: OK in 1.516 seconds
+[0m16:43:40.508303 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '92e6c9db-a523-4820-bc49-44693d73e019', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021F0E4BAD90>]}
+[0m16:43:40.511308 [info ] [Thread-4 (]: 1 of 2 OK created sql table model analytics.my_first_dbt_model ................. [[32mCREATE TABLE (2.0 rows, 0 processed)[0m in 2.68s]
+[0m16:43:40.516304 [debug] [Thread-4 (]: Finished running node model.foreign_trade_brazil.my_first_dbt_model
+[0m16:43:40.520303 [debug] [Thread-6 (]: Began running node model.foreign_trade_brazil.my_second_dbt_model
+[0m16:43:40.522305 [info ] [Thread-6 (]: 2 of 2 START sql view model analytics.my_second_dbt_model ...................... [RUN]
+[0m16:43:40.531308 [debug] [Thread-6 (]: Acquiring new bigquery connection 'model.foreign_trade_brazil.my_second_dbt_model'
+[0m16:43:40.533306 [debug] [Thread-6 (]: Began compiling node model.foreign_trade_brazil.my_second_dbt_model
+[0m16:43:40.548536 [debug] [Thread-6 (]: Writing injected SQL for node "model.foreign_trade_brazil.my_second_dbt_model"
+[0m16:43:40.551742 [debug] [Thread-6 (]: Began executing node model.foreign_trade_brazil.my_second_dbt_model
+[0m16:43:40.619403 [debug] [Thread-6 (]: Writing runtime sql for node "model.foreign_trade_brazil.my_second_dbt_model"
+[0m16:43:40.624035 [debug] [Thread-6 (]: On model.foreign_trade_brazil.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "foreign_trade_brazil", "target_name": "dev", "node_id": "model.foreign_trade_brazil.my_second_dbt_model"} */
+
+
+  create or replace view `foreign-trade-brazil`.`analytics`.`my_second_dbt_model`
+  OPTIONS()
+  as -- Use the `ref` function to select from other models
+
+select *
+from `foreign-trade-brazil`.`analytics`.`my_first_dbt_model`
+where id = 1;
+
+
+[0m16:43:40.626030 [debug] [Thread-6 (]: Opening a new connection, currently in state init
+[0m16:43:41.419345 [debug] [Thread-6 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=foreign-trade-brazil&j=bq:EU:11fdddc7-c888-4c3e-be52-c09d7cbbd090&page=queryresults
+[0m16:43:41.708838 [debug] [Thread-6 (]: SQL status: OK in 0.288 seconds
+[0m16:43:41.717493 [debug] [Thread-6 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '92e6c9db-a523-4820-bc49-44693d73e019', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021F0EB41590>]}
+[0m16:43:41.719497 [info ] [Thread-6 (]: 2 of 2 OK created sql view model analytics.my_second_dbt_model ................. [[32mCREATE VIEW (0 processed)[0m in 1.19s]
+[0m16:43:41.726493 [debug] [Thread-6 (]: Finished running node model.foreign_trade_brazil.my_second_dbt_model
+[0m16:43:41.729958 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m16:43:41.823000 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m16:43:41.825001 [debug] [MainThread]: Connection 'create_foreign-trade-brazil_analytics' was properly closed.
+[0m16:43:41.829485 [debug] [MainThread]: Connection 'list_foreign-trade-brazil_analytics' was properly closed.
+[0m16:43:41.831483 [debug] [MainThread]: Connection 'model.foreign_trade_brazil.my_first_dbt_model' was properly closed.
+[0m16:43:41.832489 [debug] [MainThread]: Connection 'model.foreign_trade_brazil.my_second_dbt_model' was properly closed.
+[0m16:43:41.834485 [info ] [MainThread]: 
+[0m16:43:41.839871 [info ] [MainThread]: Finished running 1 table model, 1 view model in 0 hours 0 minutes and 8.04 seconds (8.04s).
+[0m16:43:41.847200 [debug] [MainThread]: Command end result
+[0m16:43:41.964856 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\gabii\OneDrive\Área de Trabalho\Porfolio\Foreign_Trade_Brazil\target\manifest.json
+[0m16:43:41.990097 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\gabii\OneDrive\Área de Trabalho\Porfolio\Foreign_Trade_Brazil\target\semantic_manifest.json
+[0m16:43:42.011090 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\gabii\OneDrive\Área de Trabalho\Porfolio\Foreign_Trade_Brazil\target\run_results.json
+[0m16:43:42.012108 [info ] [MainThread]: 
+[0m16:43:42.016107 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m16:43:42.019106 [info ] [MainThread]: 
+[0m16:43:42.030521 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=2
+[0m16:43:42.034851 [debug] [MainThread]: Command `dbt run` succeeded at 16:43:42.034851 after 13.96 seconds
+[0m16:43:42.036849 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021F05175A50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021F7C5EF310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021F04FF4790>]}
+[0m16:43:42.039853 [debug] [MainThread]: Flushing usage events
+[0m16:43:42.544967 [debug] [MainThread]: An error was encountered while trying to flush usage events

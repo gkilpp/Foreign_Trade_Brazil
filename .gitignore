@@ -2,3 +2,8 @@
 data/**/*.csv
 
 .env
+
+target/
+logs/
+dbt_packagesgit rm -r --cached target
+git rm -r --cached logs/

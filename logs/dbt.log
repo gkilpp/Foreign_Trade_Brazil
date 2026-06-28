@@ -545,3 +545,136 @@ where id = 1;
 [0m16:43:42.036849 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021F05175A50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021F7C5EF310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021F04FF4790>]}
 [0m16:43:42.039853 [debug] [MainThread]: Flushing usage events
 [0m16:43:42.544967 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:14:49.349689 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F9EAC26090>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F9E7E60B10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F9EAC570D0>]}
+
+
+============================== 14:14:49.360238 | d380c0b5-a738-41db-8fd5-a47c5f751fd7 ==============================
+[0m14:14:49.360238 [info ] [MainThread]: Running with dbt=1.11.11
+[0m14:14:49.362248 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\gabii\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'indirect_selection': 'eager', 'invocation_command': 'dbt parse', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\gabii\\OneDrive\\Área de Trabalho\\Porfolio\\Foreign_Trade_Brazil\\logs'}
+[0m14:14:52.385519 [warn ] [MainThread]: [[33mWARNING[0m][CustomKeyInConfigDeprecation]: Deprecated functionality
+Custom key `marts` found in `config` at path `foreign_trade_brazil.marts` in
+file `C:\Users\gabii\OneDrive\Área de
+Trabalho\Porfolio\Foreign_Trade_Brazil\dbt_project.yml`. Custom config keys
+should move into the `config.meta`.
+[0m14:14:52.387522 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': 'd380c0b5-a738-41db-8fd5-a47c5f751fd7', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F9F409F210>]}
+[0m14:14:52.983331 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'd380c0b5-a738-41db-8fd5-a47c5f751fd7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F9F40A65D0>]}
+[0m14:14:53.198054 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'd380c0b5-a738-41db-8fd5-a47c5f751fd7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F9E635DB10>]}
+[0m14:14:53.207798 [info ] [MainThread]: Registered adapter: bigquery=1.11.3
+[0m14:14:54.271327 [debug] [MainThread]: checksum: 30a8cc8fdcbf66701b0944d4ccce3fa46dd04b61e5df68b9f16d57b2e0e3f0be, vars: {}, profile: , target: , version: 1.11.11
+[0m14:14:54.417562 [info ] [MainThread]: Unable to do partial parsing because a project config has changed
+[0m14:14:54.418560 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'd380c0b5-a738-41db-8fd5-a47c5f751fd7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F9E8C33990>]}
+[0m14:14:57.564525 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.foreign_trade_brazil.intermediate
+[0m14:14:57.581896 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'd380c0b5-a738-41db-8fd5-a47c5f751fd7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F9F478A510>]}
+[0m14:14:57.595142 [info ] [MainThread]: Performance info: C:\Users\gabii\OneDrive\Área de Trabalho\Porfolio\Foreign_Trade_Brazil\target\perf_info.json
+[0m14:14:57.731053 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\gabii\OneDrive\Área de Trabalho\Porfolio\Foreign_Trade_Brazil\target\manifest.json
+[0m14:14:57.737064 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\gabii\OneDrive\Área de Trabalho\Porfolio\Foreign_Trade_Brazil\target\semantic_manifest.json
+[0m14:14:57.739107 [warn ] [MainThread]: [[33mWARNING[0m][DeprecationsSummary]: Deprecated functionality
+Summary of encountered deprecations:
+- CustomKeyInConfigDeprecation: 1 occurrence
+To see all deprecation instances instead of just the first occurrence of each,
+run command again with the `--show-all-deprecations` flag. You may also need to
+run with `--no-partial-parse` as some deprecations are only encountered during
+parsing.
+[0m14:14:57.741395 [debug] [MainThread]: Command `dbt parse` succeeded at 14:14:57.741395 after 8.59 seconds
+[0m14:14:57.742407 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F9EAC9B6D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F9E20CB9D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F9E1F05CD0>]}
+[0m14:14:57.743403 [debug] [MainThread]: Flushing usage events
+[0m14:14:58.341913 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:16:36.907739 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000258AD66BC50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000258B2015550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000258B2015690>]}
+
+
+============================== 14:16:36.914527 | 30a236d8-4537-4f86-b1fe-1e0252d1054e ==============================
+[0m14:16:36.914527 [info ] [MainThread]: Running with dbt=1.11.11
+[0m14:16:36.916504 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'empty': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\gabii\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'indirect_selection': 'eager', 'use_colors': 'True', 'invocation_command': 'dbt run --select stg_exports', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\gabii\\OneDrive\\Área de Trabalho\\Porfolio\\Foreign_Trade_Brazil\\logs'}
+[0m14:16:38.482993 [warn ] [MainThread]: [[33mWARNING[0m][CustomKeyInConfigDeprecation]: Deprecated functionality
+Custom key `marts` found in `config` at path `foreign_trade_brazil.marts` in
+file `C:\Users\gabii\OneDrive\Área de
+Trabalho\Porfolio\Foreign_Trade_Brazil\dbt_project.yml`. Custom config keys
+should move into the `config.meta`.
+[0m14:16:38.484783 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '30a236d8-4537-4f86-b1fe-1e0252d1054e', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000258B2006510>]}
+[0m14:16:38.698987 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '30a236d8-4537-4f86-b1fe-1e0252d1054e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000258BB5BBED0>]}
+[0m14:16:38.778352 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '30a236d8-4537-4f86-b1fe-1e0252d1054e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000258AD85C2D0>]}
+[0m14:16:38.779259 [info ] [MainThread]: Registered adapter: bigquery=1.11.3
+[0m14:16:39.328134 [debug] [MainThread]: checksum: 30a8cc8fdcbf66701b0944d4ccce3fa46dd04b61e5df68b9f16d57b2e0e3f0be, vars: {}, profile: , target: , version: 1.11.11
+[0m14:16:39.633754 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m14:16:39.634757 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m14:16:39.635751 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m14:16:39.642764 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.foreign_trade_brazil.intermediate
+[0m14:16:39.687470 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '30a236d8-4537-4f86-b1fe-1e0252d1054e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000258BB9F4110>]}
+[0m14:16:39.793466 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\gabii\OneDrive\Área de Trabalho\Porfolio\Foreign_Trade_Brazil\target\manifest.json
+[0m14:16:39.798890 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\gabii\OneDrive\Área de Trabalho\Porfolio\Foreign_Trade_Brazil\target\semantic_manifest.json
+[0m14:16:39.837719 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '30a236d8-4537-4f86-b1fe-1e0252d1054e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000258BB959C10>]}
+[0m14:16:39.838716 [info ] [MainThread]: Found 2 models, 13 sources, 553 macros
+[0m14:16:39.841128 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '30a236d8-4537-4f86-b1fe-1e0252d1054e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000258BB947610>]}
+[0m14:16:39.843638 [info ] [MainThread]: 
+[0m14:16:39.845649 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m14:16:39.846652 [info ] [MainThread]: 
+[0m14:16:39.848656 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m14:16:39.852655 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_foreign-trade-brazil'
+[0m14:16:39.853654 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:16:40.605614 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_foreign-trade-brazil_analytics'
+[0m14:16:40.608090 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:16:41.082447 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '30a236d8-4537-4f86-b1fe-1e0252d1054e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000258BB947810>]}
+[0m14:16:41.083431 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m14:16:41.151913 [debug] [Thread-3 (]: Began running node model.foreign_trade_brazil.stg_exports
+[0m14:16:41.152926 [info ] [Thread-3 (]: 1 of 1 START sql view model analytics.stg_exports .............................. [RUN]
+[0m14:16:41.156080 [debug] [Thread-3 (]: Acquiring new bigquery connection 'model.foreign_trade_brazil.stg_exports'
+[0m14:16:41.157332 [debug] [Thread-3 (]: Began compiling node model.foreign_trade_brazil.stg_exports
+[0m14:16:41.180277 [debug] [Thread-3 (]: Writing injected SQL for node "model.foreign_trade_brazil.stg_exports"
+[0m14:16:41.184270 [debug] [Thread-3 (]: Began executing node model.foreign_trade_brazil.stg_exports
+[0m14:16:41.277905 [debug] [Thread-3 (]: Writing runtime sql for node "model.foreign_trade_brazil.stg_exports"
+[0m14:16:41.283481 [debug] [Thread-3 (]: On model.foreign_trade_brazil.stg_exports: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "foreign_trade_brazil", "target_name": "dev", "node_id": "model.foreign_trade_brazil.stg_exports"} */
+
+
+  create or replace view `foreign-trade-brazil`.`analytics`.`stg_exports`
+  OPTIONS()
+  as select * from `foreign-trade-brazil`.`Fact`.`EXP_2021`
+
+union all
+
+select * from `foreign-trade-brazil`.`Fact`.`EXP_2022`
+
+union all
+
+select * from `foreign-trade-brazil`.`Fact`.`EXP_2023`
+
+union all
+
+select * from `foreign-trade-brazil`.`Fact`.`EXP_2024`;
+
+
+[0m14:16:41.285738 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m14:16:42.063661 [debug] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=foreign-trade-brazil&j=bq:EU:022014f7-f579-465e-b2b3-e1f7e9b67b8e&page=queryresults
+[0m14:16:42.403275 [debug] [Thread-3 (]: SQL status: OK in 0.339 seconds
+[0m14:16:42.886555 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '30a236d8-4537-4f86-b1fe-1e0252d1054e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000258BB60D0D0>]}
+[0m14:16:42.887567 [info ] [Thread-3 (]: 1 of 1 OK created sql view model analytics.stg_exports ......................... [[32mCREATE VIEW (0 processed)[0m in 1.73s]
+[0m14:16:42.889799 [debug] [Thread-3 (]: Finished running node model.foreign_trade_brazil.stg_exports
+[0m14:16:42.891799 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m14:16:42.943826 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m14:16:42.944842 [debug] [MainThread]: Connection 'list_foreign-trade-brazil' was properly closed.
+[0m14:16:42.945854 [debug] [MainThread]: Connection 'list_foreign-trade-brazil_analytics' was properly closed.
+[0m14:16:42.946829 [debug] [MainThread]: Connection 'model.foreign_trade_brazil.stg_exports' was properly closed.
+[0m14:16:42.948248 [info ] [MainThread]: 
+[0m14:16:42.949257 [info ] [MainThread]: Finished running 1 view model in 0 hours 0 minutes and 3.10 seconds (3.10s).
+[0m14:16:42.951267 [debug] [MainThread]: Command end result
+[0m14:16:43.004112 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\gabii\OneDrive\Área de Trabalho\Porfolio\Foreign_Trade_Brazil\target\manifest.json
+[0m14:16:43.010383 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\gabii\OneDrive\Área de Trabalho\Porfolio\Foreign_Trade_Brazil\target\semantic_manifest.json
+[0m14:16:43.022565 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\gabii\OneDrive\Área de Trabalho\Porfolio\Foreign_Trade_Brazil\target\run_results.json
+[0m14:16:43.023703 [info ] [MainThread]: 
+[0m14:16:43.024715 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m14:16:43.027507 [info ] [MainThread]: 
+[0m14:16:43.028685 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=1
+[0m14:16:43.031640 [warn ] [MainThread]: [[33mWARNING[0m][DeprecationsSummary]: Deprecated functionality
+Summary of encountered deprecations:
+- CustomKeyInConfigDeprecation: 1 occurrence
+To see all deprecation instances instead of just the first occurrence of each,
+run command again with the `--show-all-deprecations` flag. You may also need to
+run with `--no-partial-parse` as some deprecations are only encountered during
+parsing.
+[0m14:16:43.033963 [debug] [MainThread]: Command `dbt run` succeeded at 14:16:43.033963 after 6.28 seconds
+[0m14:16:43.034977 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000258A964FCD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000258A9375D10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000258A9376210>]}
+[0m14:16:43.036281 [debug] [MainThread]: Flushing usage events
+[0m14:16:43.561275 [debug] [MainThread]: An error was encountered while trying to flush usage events

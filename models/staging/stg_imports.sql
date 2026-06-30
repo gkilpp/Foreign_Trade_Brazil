@@ -19,14 +19,15 @@ rename_columns AS(
     CO_MES as month,
     CO_PAIS as country_code,
     CO_NCM as ncm_code,
-    VL_FOB as export_value_usd,
+    VL_FOB as value_usd,
     KG_LIQUIDO as net_weight_kg,
     SG_UF_NCM as state_code,
     CO_VIA as transportation_mode_code,
     QT_ESTAT as statistical_quantity,
     VL_FRETE as freight_value,
     VL_SEGURO as insurance_value,
-    CO_URF as customs_zone_code
+    CO_URF as customs_zone_code,
+    'Importação' AS type_operation
 from imports_union
 
 )

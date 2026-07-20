@@ -1,0 +1,29 @@
+version: 2
+
+sources:
+  - name: fact
+    database: foreign-trade-brazil
+    schema: Fact
+
+    tables:
+      - name: EXP_2021
+      - name: EXP_2022
+      - name: EXP_2023
+      - name: EXP_2024
+      - name: IMP_2021
+      - name: IMP_2022
+      - name: IMP_2023
+      - name: IMP_2024
+      - name: PTAX
+
+  - name: dimension
+    database: foreign-trade-brazil
+    schema: Dimension
+
+    tables:
+      - name: PAIS
+      - name: NCM
+      - name: NCM_CUCI
+      - name: NCM_CGCE
+      - name: VIA
+      - name: URF
